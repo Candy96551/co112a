@@ -13,9 +13,9 @@ output-list time%S1.4.1 ARegister[]%D1.7.1 DRegister[]%D1.7.1 PC[]%D0.4.0 RAM16K
 // length RAM[0] at the top left of the screen.
 ROM32K load Rect.hack,
 
-echo "Before you run this script, select the 'Screen' option from the 'View' menu";
+echo "Before running this script, select the 'Screen' option from the 'View' menu";
 
-echo "A small rectangle should be drawn at the top left of the screen (the 'Screen' option of the 'View' menu should be selected.)";
+echo "A small rectangle should be drawn at the top-left of the screen (the 'Screen' option of the 'View' menu should be selected.)";
 
 // Draws a rectangle 16 pixels wide and 4 pixels long
 set RAM16K[0] 4,
@@ -24,3 +24,4 @@ output;
 repeat 63 {
     tick, tock, output;
 }
+
